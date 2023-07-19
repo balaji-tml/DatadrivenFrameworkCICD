@@ -1,0 +1,48 @@
+23:24:55.781 [main] INFO  - In start of the setUp()
+23:24:55.813 [main] INFO  - Platform is: linux
+23:24:55.819 [main] INFO  - Config file is loaded!
+23:24:59.267 [main] INFO  - Chrome browser is loaded!
+23:24:59.406 [main] INFO  - In end of the setUp()
+23:24:59.483 [main] INFO  - In onStart()
+23:24:59.636 [main] INFO  - In start of the getData()
+23:24:59.656 [main] INFO  - In end of the getData()
+23:24:59.671 [main] INFO  - In onTestStart()
+23:25:00.127 [main] INFO  - In start of the loginTest()
+23:25:00.956 [main] INFO  - Test application URL is loaded!
+23:25:01.033 [main] INFO  - Page title is: Swag Labs
+23:25:01.034 [main] INFO  - Username: standard_user and password is: secret_sauce
+23:25:02.660 [main] INFO  - screenshotName: Img_20230718232502.jpg
+23:25:02.686 [main] INFO  - In end of the loginTest()
+23:25:02.691 [main] INFO  - In onTestSuccess()
+23:25:02.898 [main] INFO  - screenshotName: Img_20230718232502.jpg
+23:25:03.190 [main] INFO  - In onTestStart()
+23:25:03.192 [main] INFO  - In start of the loginTest()
+23:25:03.408 [main] INFO  - Test application URL is loaded!
+23:25:03.423 [main] INFO  - Page title is: Swag Labs
+23:25:03.424 [main] INFO  - Username: locked_out_user and password is: secret_sauce
+23:25:04.232 [main] INFO  - screenshotName: Img_20230718232504.jpg
+23:25:04.246 [main] INFO  - In end of the loginTest()
+23:25:04.247 [main] INFO  - In onTestSuccess()
+23:25:04.419 [main] INFO  - screenshotName: Img_20230718232504.jpg
+23:25:04.568 [main] INFO  - In onTestStart()
+23:25:04.570 [main] INFO  - In start of the loginTest()
+23:25:04.670 [main] INFO  - Test application URL is loaded!
+23:25:04.687 [main] INFO  - Page title is: Swag Labs
+23:25:04.688 [main] INFO  - Username: problem_user and password is: secret_sauce
+23:25:05.508 [main] INFO  - screenshotName: Img_20230718232505.jpg
+23:25:05.517 [main] INFO  - In end of the loginTest()
+23:25:05.518 [main] INFO  - In onTestSuccess()
+23:25:05.749 [main] INFO  - screenshotName: Img_20230718232505.jpg
+23:25:05.985 [main] INFO  - In onTestStart()
+23:25:05.986 [main] INFO  - In start of the loginTest()
+23:25:06.095 [main] INFO  - Test application URL is loaded!
+23:25:06.116 [main] INFO  - Page title is: Swag Labs
+23:25:06.116 [main] INFO  - Username: performance_glitch_user and password is: secret_sauce
+23:25:11.950 [main] INFO  - screenshotName: Img_20230718232511.jpg
+23:25:11.959 [main] INFO  - In end of the loginTest()
+23:25:11.960 [main] INFO  - In onTestSuccess()
+23:25:12.172 [main] INFO  - screenshotName: Img_20230718232512.jpg
+23:25:12.397 [main] INFO  - In onFinish()
+23:25:12.996 [main] INFO  - In start of the tearDown()
+23:25:13.160 [main] INFO  - Browser is closed!
+23:25:13.160 [main] INFO  - In end of the tearDown()

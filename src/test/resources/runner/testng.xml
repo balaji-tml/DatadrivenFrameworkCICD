@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DataDrivenFramework">
+	<listeners>
+		<listener class-name="com.bit.listeners.CustomListener"/>
+		<listener class-name="com.bit.listeners.AnnotationTransformer"/>
+	</listeners>
+	<test name="LoginTest">
+		<classes>
+			<class name="com.bit.testcases.LoginTest"/>
+		</classes>
+	</test>
+</suite>
+
+
