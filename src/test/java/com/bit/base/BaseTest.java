@@ -8,6 +8,7 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
@@ -86,6 +87,12 @@ public class BaseTest {
                 }
 
                 //System.setProperty("webdriver.chrome.driver", userDir + "/src/test/resources/executables/chromedriver");
+                ChromeOptions options = new ChromeOptions();
+                //options.setExperimentalOption("prefs", chromePrefs);
+                options.addArguments("--no-sandbox");
+                options.addArguments("--headless"); //!!!should be enabled for Jenkins
+                options.addArguments("--disable-dev-shm-usage"); //!!!should be enabled for Jenkins
+                options.addArguments("--window-size=1920x1080"); //!!!should be enabled for Jenkins
                 driver = new ChromeDriver();
                 log.info("Chrome browser is loaded!");
             }
