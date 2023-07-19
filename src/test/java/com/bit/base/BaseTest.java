@@ -86,7 +86,7 @@ public class BaseTest {
             {
                 switch (platform) {
                     case MAC:
-                       System.setProperty("webdriver.chrome.driver", userDir + "/src/test/resources/executables/chromedriver.exe");
+                       System.setProperty("webdriver.chrome.driver", userDir + "/src/test/resources/executables/MAC/chromedriver");
                         break;
                     case WINDOWS:
                         System.setProperty("webdriver.chrome.driver", userDir + "/src/test/resources/executables/chromedriver.exe");
