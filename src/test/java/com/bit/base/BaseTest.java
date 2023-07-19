@@ -23,7 +23,7 @@ public class BaseTest {
 
     protected static WebDriver driver;
     protected Properties config = new Properties();
-    Properties OR = new Properties();
+    protected Properties OR = new Properties();
     FileInputStream fis = null;
     protected static Logger log;
 //    public ExcelReader excel;
@@ -68,13 +68,26 @@ public class BaseTest {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
             }
+            try {
+                fis = new FileInputStream(userDir + "/src/test/resources/properties/OR.properties");
+            } catch (FileNotFoundException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+            try {
+                OR.load(fis);
+                log.info("Config file is loaded!");
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
             browser = config.getProperty("browser");
             if(browser.equals("chrome"))
             {
                 switch (platform) {
                     case MAC:
-//                        System.setProperty("webdriver.chrome.driver", userDir + "/src/test/resources/executables/chromedriver.exe");
-//                        break;
+                       System.setProperty("webdriver.chrome.driver", userDir + "/src/test/resources/executables/chromedriver.exe");
+                        break;
                     case WINDOWS:
                         System.setProperty("webdriver.chrome.driver", userDir + "/src/test/resources/executables/chromedriver.exe");
                         break;
@@ -116,4 +129,5 @@ public class BaseTest {
     public WebDriver getDriver() {
         return driver;
     }
+
 }
