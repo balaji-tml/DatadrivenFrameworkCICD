@@ -3,10 +3,7 @@ package com.bit.listeners;
 import com.aventstack.extentreports.Status;
 import com.bit.base.BaseTest;
 import com.bit.utilities.ExtentManager;
-import com.bit.utilities.MonitoringMail;
-import com.bit.utilities.TestConfig;
 import com.bit.utilities.TestUtil;
-import jakarta.mail.MessagingException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -15,8 +12,6 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.SkipException;
 
-import java.net.InetAddress;
-import java.net.UnknownHostException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -109,19 +104,6 @@ public class CustomListener extends BaseTest implements ITestListener {
         log.info("In onFinish()");
         ITestListener.super.onFinish(context);
         ExtentManager.extentReports.flush();
-        MonitoringMail mail = new MonitoringMail();
 
-        try {
-            meaasgeBody = "http://" + InetAddress.
-                    getLocalHost().
-                    getHostAddress() + ":8080/job/DataDrivenLiveProject/Extent_20Reports/";
-        } catch (UnknownHostException e) {
-            e.printStackTrace();
-        }
-        try {
-            mail.sendMail(TestConfig.server, TestConfig.from, TestConfig.to, TestConfig.subject, meaasgeBody);
-        } catch (MessagingException e) {
-            e.printStackTrace();
-        }
     }
 }
