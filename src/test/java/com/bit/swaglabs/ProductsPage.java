@@ -3,7 +3,6 @@ package com.bit.swaglabs;
 import com.bit.base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 public class ProductsPage extends BasePage {
 
@@ -27,8 +26,6 @@ public class ProductsPage extends BasePage {
     {
         driver.findElement(shoppingCart).click();
     }
-
-
 
     
 }

@@ -15,25 +15,6 @@ import java.util.Hashtable;
 
 public class LoginTest extends BaseTest
 {
-//	@Test(dataProviderClass = DataProviders.class, dataProvider = "dp")
-//	public void loginTest(String username,String password)
-//	{
-//		String screenshotName = "Img_"+new SimpleDateFormat("yyyyMMddHHmm'.jpg'").format(new Date());
-//		String url = config.getProperty("url");
-//		//startTest("LoginTest","");
-//		driver.get(url);
-//		log.info("Test application URL is loaded!");
-//		log.info("Page title is: "+driver.getTitle());
-//		System.out.println("Username: "+username+" and password is: "+password);  //For debugging
-//		String expPageTitle = "Swag Labs",actPageTitle;
-//		LoginPage loginPage = new LoginPage(driver);
-//		loginPage.login(username,password);
-//		TestUtil.captureScreenshot(userDir + "/target/"+screenshotName);
-//		actPageTitle = driver.getTitle();
-//		//System.out.println("Page title is: "+actPageTitle);    //For debugging
-//		Assert.assertEquals(actPageTitle,expPageTitle,"Login Test is not executed successfully!");
-//	}
-
 	@Test(dataProviderClass = DataProviders.class, dataProvider = "dp")
 	public void loginTest(Hashtable<String, String> data)
 	{
@@ -46,7 +27,6 @@ public class LoginTest extends BaseTest
 		String url = config.getProperty("url");
 		String username = data.get("username");
 		String password = data.get("password");
-		//startTest("LoginTest","");
 		driver.get(url);
 		log.info("Test application URL is loaded!");
 		log.info("Page title is: "+driver.getTitle());
@@ -56,7 +36,6 @@ public class LoginTest extends BaseTest
 		loginPage.login(username,password);
 		TestUtil.captureScreenshot(userDir + "/target/"+screenshotName);
 		actPageTitle = driver.getTitle();
-		//System.out.println("Page title is: "+actPageTitle);    //For debugging
 		Assert.assertEquals(actPageTitle,expPageTitle,"Login Test is not executed successfully!");
 		log.info("In end of the loginTest()");
 	}

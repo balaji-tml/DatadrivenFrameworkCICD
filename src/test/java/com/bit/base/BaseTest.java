@@ -11,7 +11,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 
 import java.io.FileInputStream;
@@ -41,10 +40,6 @@ public class BaseTest {
     public ExtentTest test = null;
 
     public WebDriverWait wait = null;
-
-
-    //String browser,url;
-
     @BeforeSuite
     public void setUp()
     {
@@ -104,9 +99,7 @@ public class BaseTest {
                         break;
                 }
 
-                //System.setProperty("webdriver.chrome.driver", userDir + "/src/test/resources/executables/chromedriver");
                 ChromeOptions options = new ChromeOptions();
-//                options.setExperimentalOption("prefs", chromePrefs);
                 options.addArguments("--no-sandbox");
                 options.addArguments("--headless"); //!!!should be enabled for Jenkins
                 options.addArguments("--disable-dev-shm-usage"); //!!!should be enabled for Jenkins
