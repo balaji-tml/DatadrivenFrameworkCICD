@@ -27,6 +27,13 @@ jobs:
           fetch-depth: 0
       # Install your linters here
 
-      - name: Run linters
-        uses: wearerequired/lint-action@v2
+      - name: Run linters      
+        #uses: github/super-linter@v4
+        #env:
+        #    VALIDATE_ALL_CODEBASE: "true"
+        #    DEFAULT_BRANCH: main
+        uses: github/super-linter@v4
+        env:
+            VALIDATE_ALL_CODEBASE: "true"
+            DEFAULT_BRANCH: main
         
