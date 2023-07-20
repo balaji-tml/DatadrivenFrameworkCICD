@@ -14,6 +14,22 @@ on:
     branches: [ "main" ]
 
 jobs:
+  run-linters:
+    name: Run linters
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+
+      # Install your linters here
+
+      - name: Lint Code Base
+        uses: super-linter/super-linter@v5
+        env:
+          VALIDATE_ALL_CODEBASE: false
+          DEFAULT_BRANCH: master
+          
   build:
     runs-on: ${{ matrix.os }}
     
@@ -21,6 +37,11 @@ jobs:
       matrix:
         os: [ubuntu-latest,windows-latest]        
 
+    permissions:
+      contents: read
+      packages: read
+      statuses: write
+      
     steps:
     - uses: actions/checkout@v3
     - name: Set up JDK 17
