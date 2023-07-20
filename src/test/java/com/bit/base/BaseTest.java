@@ -9,12 +9,15 @@ import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 
 import static com.bit.utilities.TestConfiguration.getCurrentPlatform;
@@ -36,6 +39,8 @@ public class BaseTest {
     public ExtentReports extent = null;
 
     public ExtentTest test = null;
+
+    public WebDriverWait wait = null;
 
 
     //String browser,url;
@@ -102,11 +107,13 @@ public class BaseTest {
                 //System.setProperty("webdriver.chrome.driver", userDir + "/src/test/resources/executables/chromedriver");
                 ChromeOptions options = new ChromeOptions();
                 //options.setExperimentalOption("prefs", chromePrefs);
-                options.addArguments("--no-sandbox");
-                options.addArguments("--headless"); //!!!should be enabled for Jenkins
-                options.addArguments("--disable-dev-shm-usage"); //!!!should be enabled for Jenkins
-                options.addArguments("--window-size=1920x1080"); //!!!should be enabled for Jenkins
-                driver = new ChromeDriver(options);
+//                options.addArguments("--no-sandbox");
+//                options.addArguments("--headless"); //!!!should be enabled for Jenkins
+//                options.addArguments("--disable-dev-shm-usage"); //!!!should be enabled for Jenkins
+//                options.addArguments("--window-size=1920x1080"); //!!!should be enabled for Jenkins
+//                driver = new ChromeDriver(options);
+                driver = new ChromeDriver();
+                wait = new WebDriverWait(driver, Duration.ofMinutes(5));
                 log.info("Chrome browser is loaded!");
             }
             driver.manage().window().maximize();
