@@ -106,13 +106,13 @@ public class BaseTest {
 
                 //System.setProperty("webdriver.chrome.driver", userDir + "/src/test/resources/executables/chromedriver");
                 ChromeOptions options = new ChromeOptions();
-                //options.setExperimentalOption("prefs", chromePrefs);
-//                options.addArguments("--no-sandbox");
-//                options.addArguments("--headless"); //!!!should be enabled for Jenkins
-//                options.addArguments("--disable-dev-shm-usage"); //!!!should be enabled for Jenkins
-//                options.addArguments("--window-size=1920x1080"); //!!!should be enabled for Jenkins
-//                driver = new ChromeDriver(options);
-                driver = new ChromeDriver();
+//                options.setExperimentalOption("prefs", chromePrefs);
+                options.addArguments("--no-sandbox");
+                options.addArguments("--headless"); //!!!should be enabled for Jenkins
+                options.addArguments("--disable-dev-shm-usage"); //!!!should be enabled for Jenkins
+                options.addArguments("--window-size=1920x1080"); //!!!should be enabled for Jenkins
+                driver = new ChromeDriver(options);
+//                driver = new ChromeDriver();
                 wait = new WebDriverWait(driver, Duration.ofMinutes(5));
                 log.info("Chrome browser is loaded!");
             }
