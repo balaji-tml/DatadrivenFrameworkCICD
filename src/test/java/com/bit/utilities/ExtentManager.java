@@ -2,10 +2,12 @@ package com.bit.utilities;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Protocol;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import org.openqa.selenium.Platform;
 
 import java.io.File;
+import java.util.Date;
 
 public class ExtentManager {
     public static final ExtentReports extentReports = new ExtentReports();
@@ -14,8 +16,11 @@ public class ExtentManager {
         ExtentSparkReporter extent = new ExtentSparkReporter("./Reports/extent-reports/extent-report.html");
         extent.config().setReportName("Sample Extent Report");
         extentReports.attachReporter(extent);
-        extentReports.setSystemInfo("Blog Name", "SW Test Academy");
-        extentReports.setSystemInfo("Author", "Onur Baskirt");
+        extentReports.setSystemInfo("Operating System", System.getProperty("os.name"));
+        extentReports.setSystemInfo("User Name", System.getProperty("user.name"));
+//        extentReports.setSystemInfo("Operating System", System.getProperty("os.name"));
+        extentReports.setSystemInfo("Author", "Balaji");
+        extentReports.setSystemInfo("Report Date", new Date().toString());
         return extentReports;
     }
 //}
@@ -46,6 +51,24 @@ public class ExtentManager {
         ExtentSparkReporter htmlReporter = new ExtentSparkReporter(fileName);
 //        htmlReporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
 //        htmlReporter.config().setChartVisibilityOnOpen(true);
+        htmlReporter.config().setCss("css-string");
+        htmlReporter.config().setDocumentTitle("page title");
+        htmlReporter.config().setTimelineEnabled(true);
+        htmlReporter.config().setEncoding("utf-8");
+        htmlReporter.config().setJs("js-string");
+        htmlReporter.config().setProtocol(Protocol.HTTPS);
+        htmlReporter.config().setReportName("build name");
+        htmlReporter.config().setTheme(Theme.DARK);
+
+//        htmlReporter.Config.DocumentTitle = "page title";
+//        htmlReporter.Config.EnableTimeline = true;
+//        htmlReporter.Config.Encoding = "utf-8";
+//        htmlReporter.Config.JS = "js-string";
+//        htmlReporter.Config.Protocol = Protocol.HTTPS;
+//        htmlReporter.Config.ReportName = "build name";
+//        htmlReporter.Config.Theme = Theme.DARK;
+
+
         htmlReporter.config().setTheme(Theme.STANDARD);
         htmlReporter.config().setDocumentTitle(fileName);
         htmlReporter.config().setEncoding("utf-8");
