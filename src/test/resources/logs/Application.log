@@ -1,42 +1,21 @@
-14:39:55.741 [main] INFO  - In start of the setUp()
-14:39:55.759 [main] INFO  - Platform is: linux
-14:39:55.760 [main] INFO  - Config file is loaded!
-14:39:55.761 [main] INFO  - Config file is loaded!
-14:39:59.535 [main] INFO  - Chrome browser is loaded!
-14:39:59.662 [main] INFO  - In end of the setUp()
-14:39:59.672 [main] INFO  - In onStart()
-14:39:59.790 [TestNG-test=Buy Product Test-1] INFO  - In start of the getData()
-14:39:59.808 [TestNG-test=Buy Product Test-1] INFO  - In end of the getData()
-14:39:59.820 [TestNG-test=Buy Product Test-1] INFO  - In onTestStart()
-14:40:00.270 [TestNG-test=Buy Product Test-1] INFO  - In start of the buyProductTest()
-14:40:03.399 [TestNG-test=Buy Product Test-1] INFO  - screenshotName: Img_20230722144003.jpg
-14:40:03.429 [TestNG-test=Buy Product Test-1] INFO  - In end of the loginTest()
-14:40:03.429 [TestNG-test=Buy Product Test-1] INFO  - In start of the ProductsPage()
-14:40:03.598 [TestNG-test=Buy Product Test-1] INFO  - Click on Add Backpack product to cart
-14:40:03.728 [TestNG-test=Buy Product Test-1] INFO  - Click on Shopping cart
-14:40:03.729 [TestNG-test=Buy Product Test-1] INFO  - In end of the ProductsPage()
-14:40:03.729 [TestNG-test=Buy Product Test-1] INFO  - In start of the CartPage()
-14:40:03.871 [TestNG-test=Buy Product Test-1] INFO  - Click on Checkout
-14:40:03.871 [TestNG-test=Buy Product Test-1] INFO  - In end of the CartPage()
-14:40:03.871 [TestNG-test=Buy Product Test-1] INFO  - In start of the CheckoutPage()
-14:40:04.455 [TestNG-test=Buy Product Test-1] INFO  - Complete Checkout
-14:40:04.456 [TestNG-test=Buy Product Test-1] INFO  - In end of the CheckoutPage()
-14:40:04.456 [TestNG-test=Buy Product Test-1] INFO  - In start of the ConfirmationPage()
-14:40:04.610 [TestNG-test=Buy Product Test-1] INFO  - Click on Finish
-14:40:04.611 [TestNG-test=Buy Product Test-1] INFO  - In end of the ConfirmationPage()
-14:40:04.611 [TestNG-test=Buy Product Test-1] INFO  - In end of the buyProductTest()
-14:40:04.616 [TestNG-test=Buy Product Test-1] INFO  - In onTestSuccess()
-14:40:04.911 [TestNG-test=Buy Product Test-1] INFO  - screenshotName: Img_20230722144004.jpg
-14:40:05.225 [TestNG-test=Buy Product Test-1] INFO  - In onTestStart()
-14:40:05.227 [TestNG-test=Buy Product Test-1] INFO  - In start of the buyProductTest()
-14:40:05.228 [TestNG-test=Buy Product Test-1] INFO  - In onTestSkipped()
-14:40:05.794 [TestNG-test=Buy Product Test-1] INFO  - In onTestStart()
-14:40:05.797 [TestNG-test=Buy Product Test-1] INFO  - In start of the buyProductTest()
-14:40:05.798 [TestNG-test=Buy Product Test-1] INFO  - In onTestSkipped()
-14:40:05.842 [TestNG-test=Buy Product Test-1] INFO  - In onTestStart()
-14:40:05.845 [TestNG-test=Buy Product Test-1] INFO  - In start of the buyProductTest()
-14:40:05.849 [TestNG-test=Buy Product Test-1] INFO  - In onTestSkipped()
-14:40:05.905 [main] INFO  - In onFinish()
-14:40:05.942 [main] INFO  - In start of the tearDown()
-14:40:06.127 [main] INFO  - Browser is closed!
-14:40:06.128 [main] INFO  - In end of the tearDown()
+02:24:53.960 [main] INFO  - In start of the setUp()
+02:24:53.994 [main] INFO  - Platform is: linux
+02:24:53.995 [main] INFO  - Config file is loaded!
+02:24:53.996 [main] INFO  - Config file is loaded!
+02:24:56.448 [main] INFO  - Chrome browser is loaded!
+02:24:56.566 [main] INFO  - In end of the setUp()
+02:24:56.587 [main] INFO  - In onStart()
+02:24:56.744 [TestNG-test=Login Test-1] INFO  - In start of the getData()
+02:24:56.761 [TestNG-test=Login Test-1] INFO  - In end of the getData()
+02:24:56.824 [TestNG-test=Login Test-1] INFO  - In onTestStart()
+02:24:57.112 [TestNG-test=Login Test-1] INFO  - In onTestSkipped()
+02:24:57.668 [TestNG-test=Login Test-1] INFO  - In onTestStart()
+02:24:57.670 [TestNG-test=Login Test-1] INFO  - In onTestSkipped()
+02:24:57.709 [TestNG-test=Login Test-1] INFO  - In onTestStart()
+02:24:57.711 [TestNG-test=Login Test-1] INFO  - In onTestSkipped()
+02:24:57.756 [TestNG-test=Login Test-1] INFO  - In onTestStart()
+02:24:57.757 [TestNG-test=Login Test-1] INFO  - In onTestSkipped()
+02:24:57.789 [main] INFO  - In onFinish()
+02:24:57.838 [main] INFO  - In start of the tearDown()
+02:24:57.944 [main] INFO  - Browser is closed!
+02:24:57.944 [main] INFO  - In end of the tearDown()

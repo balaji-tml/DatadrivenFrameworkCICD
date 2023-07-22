@@ -5,17 +5,17 @@
 		<listener class-name="com.bit.listeners.CustomListener"/>
 		<listener class-name="com.bit.listeners.AnnotationTransformer"/>
 	</listeners>
-<!--	<test name="Login Test" parallel="methods">-->
-<!--		<classes>-->
-<!--			<class name="com.bit.testcases.LoginTest"/>-->
-<!--		</classes>-->
-<!--	</test>-->
-	<test name="Buy Product Test" parallel="methods">
+	<test name="Login Test" parallel="methods">
 		<classes>
-<!--			<class name="com.bit.testcases.LoginTest"/>-->
-			<class name="com.bit.testcases.BuyProductTest"/>
+			<class name="com.bit.testcases.LoginTest"/>
 		</classes>
 	</test>
+<!--	<test name="Buy Product Test" parallel="methods">-->
+<!--		<classes>-->
+<!--&lt;!&ndash;			<class name="com.bit.testcases.LoginTest"/>&ndash;&gt;-->
+<!--			<class name="com.bit.testcases.BuyProductTest"/>-->
+<!--		</classes>-->
+<!--	</test>-->
 </suite>
 
 

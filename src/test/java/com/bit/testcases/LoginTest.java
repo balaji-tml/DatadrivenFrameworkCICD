@@ -5,6 +5,7 @@ import com.bit.base.BaseTest;
 import com.bit.swaglabs.LoginPage;
 import com.bit.utilities.DataProviders;
 import com.bit.utilities.TestUtil;
+import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.Test;
@@ -15,7 +16,8 @@ import java.util.Hashtable;
 
 public class LoginTest extends BaseTest
 {
-	@Test(dataProviderClass = DataProviders.class, dataProvider = "dp")
+	@Test(dataProviderClass = DataProviders.class, dataProvider = "dp",description = "Login to Swags Labs Application")
+	@Description("Test Description: Login test with valid and invalid credentials")
 	public void loginTest(Hashtable<String, String> data)
 	{
 		log.info("In start of the loginTest()");
