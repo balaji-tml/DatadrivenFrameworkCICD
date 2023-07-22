@@ -1,42 +1,42 @@
-21:59:36.189 [main] INFO  - In start of the setUp()
-21:59:36.200 [main] INFO  - Platform is: linux
-21:59:36.200 [main] INFO  - Config file is loaded!
-21:59:36.201 [main] INFO  - Config file is loaded!
-21:59:38.950 [main] INFO  - Chrome browser is loaded!
-21:59:39.071 [main] INFO  - In end of the setUp()
-21:59:39.083 [main] INFO  - In onStart()
-21:59:39.208 [TestNG-test=Buy Product Test-1] INFO  - In start of the getData()
-21:59:39.225 [TestNG-test=Buy Product Test-1] INFO  - In end of the getData()
-21:59:39.241 [TestNG-test=Buy Product Test-1] INFO  - In onTestStart()
-21:59:39.606 [TestNG-test=Buy Product Test-1] INFO  - In start of the buyProductTest()
-21:59:42.582 [TestNG-test=Buy Product Test-1] INFO  - screenshotName: Img_20230721215942.jpg
-21:59:42.614 [TestNG-test=Buy Product Test-1] INFO  - In end of the loginTest()
-21:59:42.614 [TestNG-test=Buy Product Test-1] INFO  - In start of the ProductsPage()
-21:59:42.797 [TestNG-test=Buy Product Test-1] INFO  - Click on Add Backpack product to cart
-21:59:42.947 [TestNG-test=Buy Product Test-1] INFO  - Click on Shopping cart
-21:59:42.948 [TestNG-test=Buy Product Test-1] INFO  - In end of the ProductsPage()
-21:59:42.948 [TestNG-test=Buy Product Test-1] INFO  - In start of the CartPage()
-21:59:43.091 [TestNG-test=Buy Product Test-1] INFO  - Click on Checkout
-21:59:43.091 [TestNG-test=Buy Product Test-1] INFO  - In end of the CartPage()
-21:59:43.091 [TestNG-test=Buy Product Test-1] INFO  - In start of the CheckoutPage()
-21:59:43.613 [TestNG-test=Buy Product Test-1] INFO  - Complete Checkout
-21:59:43.614 [TestNG-test=Buy Product Test-1] INFO  - In end of the CheckoutPage()
-21:59:43.614 [TestNG-test=Buy Product Test-1] INFO  - In start of the ConfirmationPage()
-21:59:43.744 [TestNG-test=Buy Product Test-1] INFO  - Click on Finish
-21:59:43.744 [TestNG-test=Buy Product Test-1] INFO  - In end of the ConfirmationPage()
-21:59:43.745 [TestNG-test=Buy Product Test-1] INFO  - In end of the buyProductTest()
-21:59:43.751 [TestNG-test=Buy Product Test-1] INFO  - In onTestSuccess()
-21:59:44.129 [TestNG-test=Buy Product Test-1] INFO  - screenshotName: Img_20230721215944.jpg
-21:59:44.502 [TestNG-test=Buy Product Test-1] INFO  - In onTestStart()
-21:59:44.507 [TestNG-test=Buy Product Test-1] INFO  - In start of the buyProductTest()
-21:59:44.509 [TestNG-test=Buy Product Test-1] INFO  - In onTestSkipped()
-21:59:45.245 [TestNG-test=Buy Product Test-1] INFO  - In onTestStart()
-21:59:45.247 [TestNG-test=Buy Product Test-1] INFO  - In start of the buyProductTest()
-21:59:45.257 [TestNG-test=Buy Product Test-1] INFO  - In onTestSkipped()
-21:59:45.363 [TestNG-test=Buy Product Test-1] INFO  - In onTestStart()
-21:59:45.364 [TestNG-test=Buy Product Test-1] INFO  - In start of the buyProductTest()
-21:59:45.377 [TestNG-test=Buy Product Test-1] INFO  - In onTestSkipped()
-21:59:45.512 [main] INFO  - In onFinish()
-21:59:45.612 [main] INFO  - In start of the tearDown()
-21:59:45.736 [main] INFO  - Browser is closed!
-21:59:45.737 [main] INFO  - In end of the tearDown()
+14:39:55.741 [main] INFO  - In start of the setUp()
+14:39:55.759 [main] INFO  - Platform is: linux
+14:39:55.760 [main] INFO  - Config file is loaded!
+14:39:55.761 [main] INFO  - Config file is loaded!
+14:39:59.535 [main] INFO  - Chrome browser is loaded!
+14:39:59.662 [main] INFO  - In end of the setUp()
+14:39:59.672 [main] INFO  - In onStart()
+14:39:59.790 [TestNG-test=Buy Product Test-1] INFO  - In start of the getData()
+14:39:59.808 [TestNG-test=Buy Product Test-1] INFO  - In end of the getData()
+14:39:59.820 [TestNG-test=Buy Product Test-1] INFO  - In onTestStart()
+14:40:00.270 [TestNG-test=Buy Product Test-1] INFO  - In start of the buyProductTest()
+14:40:03.399 [TestNG-test=Buy Product Test-1] INFO  - screenshotName: Img_20230722144003.jpg
+14:40:03.429 [TestNG-test=Buy Product Test-1] INFO  - In end of the loginTest()
+14:40:03.429 [TestNG-test=Buy Product Test-1] INFO  - In start of the ProductsPage()
+14:40:03.598 [TestNG-test=Buy Product Test-1] INFO  - Click on Add Backpack product to cart
+14:40:03.728 [TestNG-test=Buy Product Test-1] INFO  - Click on Shopping cart
+14:40:03.729 [TestNG-test=Buy Product Test-1] INFO  - In end of the ProductsPage()
+14:40:03.729 [TestNG-test=Buy Product Test-1] INFO  - In start of the CartPage()
+14:40:03.871 [TestNG-test=Buy Product Test-1] INFO  - Click on Checkout
+14:40:03.871 [TestNG-test=Buy Product Test-1] INFO  - In end of the CartPage()
+14:40:03.871 [TestNG-test=Buy Product Test-1] INFO  - In start of the CheckoutPage()
+14:40:04.455 [TestNG-test=Buy Product Test-1] INFO  - Complete Checkout
+14:40:04.456 [TestNG-test=Buy Product Test-1] INFO  - In end of the CheckoutPage()
+14:40:04.456 [TestNG-test=Buy Product Test-1] INFO  - In start of the ConfirmationPage()
+14:40:04.610 [TestNG-test=Buy Product Test-1] INFO  - Click on Finish
+14:40:04.611 [TestNG-test=Buy Product Test-1] INFO  - In end of the ConfirmationPage()
+14:40:04.611 [TestNG-test=Buy Product Test-1] INFO  - In end of the buyProductTest()
+14:40:04.616 [TestNG-test=Buy Product Test-1] INFO  - In onTestSuccess()
+14:40:04.911 [TestNG-test=Buy Product Test-1] INFO  - screenshotName: Img_20230722144004.jpg
+14:40:05.225 [TestNG-test=Buy Product Test-1] INFO  - In onTestStart()
+14:40:05.227 [TestNG-test=Buy Product Test-1] INFO  - In start of the buyProductTest()
+14:40:05.228 [TestNG-test=Buy Product Test-1] INFO  - In onTestSkipped()
+14:40:05.794 [TestNG-test=Buy Product Test-1] INFO  - In onTestStart()
+14:40:05.797 [TestNG-test=Buy Product Test-1] INFO  - In start of the buyProductTest()
+14:40:05.798 [TestNG-test=Buy Product Test-1] INFO  - In onTestSkipped()
+14:40:05.842 [TestNG-test=Buy Product Test-1] INFO  - In onTestStart()
+14:40:05.845 [TestNG-test=Buy Product Test-1] INFO  - In start of the buyProductTest()
+14:40:05.849 [TestNG-test=Buy Product Test-1] INFO  - In onTestSkipped()
+14:40:05.905 [main] INFO  - In onFinish()
+14:40:05.942 [main] INFO  - In start of the tearDown()
+14:40:06.127 [main] INFO  - Browser is closed!
+14:40:06.128 [main] INFO  - In end of the tearDown()
